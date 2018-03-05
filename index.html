@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>My page title</title>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  </script>
+<style>
+#zombie_map {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;  
+    background-color: grey;
+}
+</style>
+  </head>
+  <body>
+    <div id=“zombie_map"></div>
+<script>
+    var zombie_map;
+    function initMap() {
+
+            zombie_map = new google.maps.Map(document.getElementById('zombie_map'), {
+            zoom: 10,
+            center: {lat: ###, lng: ###}
+        });
+    }
+</script>
+  </body>
+</html>
